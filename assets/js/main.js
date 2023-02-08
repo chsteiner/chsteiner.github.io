@@ -60,11 +60,12 @@
     document.querySelectorAll(".page-scroll").forEach(e =>
         e.addEventListener("click", () => {
             navbarToggler.classList.remove("active");
-            navbarCollapse.classList.remove('show')
+            navbarCollapse.classList.remove("show")
         })
     );
     navbarToggler.addEventListener('click', function() {
         navbarToggler.classList.toggle("active");
+        navbarCollapse.classList.toggle("show")
     }) 
 
 
