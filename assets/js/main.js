@@ -1,6 +1,10 @@
 (function() {
-  // Language Toggle
   document.addEventListener('DOMContentLoaded', function() {
+    // Copyright year
+    const yearEl = document.getElementById('copyright-year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    // Language Toggle
     const langButtons = document.querySelectorAll('.lang-btn');
     const bioDe = document.querySelector('.bio-de');
     const bioEn = document.querySelector('.bio-en');
